@@ -994,6 +994,7 @@
   flex-direction: column;
   gap: 6px;
   min-width: 220px;
+  width: 100%;
 }
 
 .account-hero__eyebrow {
@@ -1005,9 +1006,11 @@
 
 .account-hero__value-row {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: var(--gap-sm);
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .account-hero__value {
@@ -1020,6 +1023,19 @@
   font-size: 0.95rem;
   font-weight: var(--weight-medium);
   color: var(--dark-grey);
+}
+
+.account-hero__delta-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  text-align: right;
+  margin-left: auto;
+}
+
+.account-hero__delta--sub {
+  font-size: 0.85rem;
 }
 
 .account-hero__delta--up {
