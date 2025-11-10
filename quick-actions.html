@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bottom Action Sheet</title>
+
+  <!-- Merriweather + Roboto -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@300;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body class="demo-page">
+
+  <nav class="variant-nav">
+    <a href="quick-actions.html" aria-current="page">Quick actions</a>
+    <a href="bookmarks.html">Bookmarks</a>
+    <a href="portfolio-overview.html">Portfolio overview</a>
+  </nav>
+
+  <div class="phone-gallery">
+    <div class="phone-frame">
+      <span class="phone-label">1</span>
+      <section class="action-sheet" role="dialog" aria-modal="true">
+        <header class="sheet-header">
+          <div class="sheet-header__handle-wrapper">
+            <div class="sheet-header__handle"></div>
+          </div>
+
+          <div class="sheet-header__top-row">
+            <div class="sheet-header__info">
+              <h1 class="instrument-name">Norwegian Air Shuttle</h1>
+              <div class="instrument-meta">
+                <span class="instrument-ticker">NAS - Oslo Bors</span>
+                <span class="instrument-updated">Updated 14:32 CET</span>
+              </div>
+            </div>
+            <button class="sheet-header__close-btn" aria-label="Close">
+              <svg
+                class="icon-close"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="sheet-body">
+          <section class="orders-panel" aria-label="Active orders">
+            <header class="orders-panel__header">
+              <div class="orders-panel__title-group">
+                <span class="orders-panel__title">Active orders</span>
+                <span class="orders-panel__count-chip">3</span>
+              </div>
+              <button class="orders-panel__link" type="button">Review all</button>
+            </header>
+
+            <ul class="orders-panel__list">
+              <li>
+              <button class="orders-card" type="button" aria-label="Modify order Sell 300 @ 21.00">
+                <div class="orders-card__body">
+                  <span class="orders-card__label">Next expiring</span>
+                  <div class="orders-card__headline">
+                    <span class="orders-card__badge orders-card__badge--limit">Limit</span>
+                    <span class="orders-card__main">Sell 300 @ 21.00</span>
+                  </div>
+                  <span class="orders-card__meta">Good-til-cancelled &middot; Expires in 2h</span>
+                </div>
+                  <span class="orders-card__icon" aria-hidden="true">
+                    <svg
+                      class="icon-chevron"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </section>
+
+          <section class="market-grid" aria-label="Market snapshot">
+            <div class="market-grid__item">
+              <span class="market-grid__label">Last</span>
+              <div class="market-grid__value">19.24</div>
+              <span class="market-grid__sub market-grid__sub--down">-1.80% (-0.35)</span>
+            </div>
+            <div class="market-grid__item">
+              <span class="market-grid__label">Bid / Ask</span>
+              <div class="market-grid__value">19.22 / 19.26</div>
+              <span class="market-grid__sub">Spread 0.21%</span>
+            </div>
+            <div class="market-grid__item">
+              <span class="market-grid__label">Position</span>
+              <div class="market-grid__value market-grid__value--up">+1,200</div>
+              <span class="market-grid__sub">Avg 18.55</span>
+            </div>
+          </section>
+
+          <div class="primary-actions" role="group" aria-label="Quick actions">
+            <button class="list-manager" type="button" aria-label="Assign to lists">
+              <svg
+                class="icon-list"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="9" y1="6" x2="21" y2="6" />
+                <line x1="9" y1="12" x2="21" y2="12" />
+                <line x1="9" y1="18" x2="21" y2="18" />
+                <circle cx="4" cy="6" r="1.5" />
+                <circle cx="4" cy="12" r="1.5" />
+                <circle cx="4" cy="18" r="1.5" />
+              </svg>
+            </button>
+            <div class="trade-actions" role="group" aria-label="Place order">
+              <button class="btn-primary btn-sell" type="button">
+                <span class="btn-primary__text">Sell</span>
+              </button>
+              <button class="btn-primary btn-buy" type="button">
+                <span class="btn-primary__text">Buy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="phone-frame">
+      <span class="phone-label">2</span>
+      <section class="action-sheet" role="dialog" aria-modal="true">
+        <header class="sheet-header">
+          <div class="sheet-header__handle-wrapper">
+            <div class="sheet-header__handle"></div>
+          </div>
+
+          <div class="sheet-header__top-row">
+            <div class="sheet-header__info">
+              <h1 class="instrument-name">Equinor ASA</h1>
+              <div class="instrument-meta">
+                <span class="instrument-ticker">EQNR - Oslo Bors</span>
+                <span class="instrument-updated">Updated 09:47 CET</span>
+              </div>
+            </div>
+            <button class="sheet-header__close-btn" aria-label="Close">
+              <svg
+                class="icon-close"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="sheet-body">
+          <section class="orders-panel" aria-label="Active orders">
+            <header class="orders-panel__header">
+              <div class="orders-panel__title-group">
+                <span class="orders-panel__title">Active orders</span>
+                <span class="orders-panel__count-chip">2</span>
+              </div>
+              <button class="orders-panel__link" type="button">Review all</button>
+            </header>
+
+            <ul class="orders-panel__list">
+              <li>
+                <button class="orders-card orders-card--inline" type="button" aria-label="Modify order Buy 500 @ 298.50">
+                  <div class="orders-card__body">
+                    <div class="orders-card__headline">
+                      <span class="orders-card__badge orders-card__badge--limit">Limit</span>
+                      <span class="orders-card__main">Buy 500 @ 298.50</span>
+                      <span class="orders-card__meta">Good-til-close &middot; Partial fill</span>
+                    </div>
+                  </div>
+                  <span class="orders-card__icon" aria-hidden="true">
+                    <svg
+                      class="icon-chevron"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="orders-card orders-card--inline" type="button" aria-label="Modify order Stop 200 @ 295.00">
+                  <div class="orders-card__body">
+                    <div class="orders-card__headline">
+                      <span class="orders-card__badge orders-card__badge--stop">Stop</span>
+                      <span class="orders-card__main">Sell 200 @ 295.00</span>
+                      <span class="orders-card__meta">Day &middot; Triggers at 294.50</span>
+                    </div>
+                  </div>
+                  <span class="orders-card__icon" aria-hidden="true">
+                    <svg
+                      class="icon-chevron"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </section>
+
+          <section class="market-grid" aria-label="Market snapshot">
+            <div class="market-grid__item">
+              <span class="market-grid__label">Last</span>
+              <div class="market-grid__value market-grid__value--up">301.40</div>
+              <span class="market-grid__sub market-grid__sub--up">+0.92% (+2.75)</span>
+            </div>
+            <div class="market-grid__item">
+              <span class="market-grid__label">Bid / Ask</span>
+              <div class="market-grid__value">301.20 / 301.50</div>
+              <span class="market-grid__sub">Spread 0.10%</span>
+            </div>
+            <div class="market-grid__item">
+              <span class="market-grid__label">Position</span>
+              <div class="market-grid__value market-grid__value--down">-2,400</div>
+              <span class="market-grid__sub">Avg 305.10</span>
+            </div>
+          </section>
+
+          <div class="primary-actions" role="group" aria-label="Quick actions">
+            <button class="list-manager" type="button" aria-label="Assign to lists">
+              <svg
+                class="icon-list"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="9" y1="6" x2="21" y2="6" />
+                <line x1="9" y1="12" x2="21" y2="12" />
+                <line x1="9" y1="18" x2="21" y2="18" />
+                <circle cx="4" cy="6" r="1.5" />
+                <circle cx="4" cy="12" r="1.5" />
+                <circle cx="4" cy="18" r="1.5" />
+              </svg>
+            </button>
+            <div class="trade-actions" role="group" aria-label="Place order">
+              <button class="btn-primary btn-sell" type="button">
+                <span class="btn-primary__text">Sell</span>
+              </button>
+              <button class="btn-primary btn-buy" type="button">
+                <span class="btn-primary__text">Buy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="phone-frame">
+      <span class="phone-label">3</span>
+      <section class="action-sheet" role="dialog" aria-modal="true">
+        <header class="sheet-header">
+          <div class="sheet-header__handle-wrapper">
+            <div class="sheet-header__handle"></div>
+          </div>
+
+          <div class="sheet-header__top-row">
+            <div class="sheet-header__info">
+              <h1 class="instrument-name">Aker BP</h1>
+              <div class="instrument-meta">
+                <span class="instrument-ticker">AKRBP - Oslo Bors</span>
+                <span class="instrument-updated">Updated 11:05 CET</span>
+              </div>
+            </div>
+            <button class="sheet-header__close-btn" aria-label="Close">
+              <svg
+                class="icon-close"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="sheet-body">
+          <section class="orders-panel" aria-label="Active orders">
+            <header class="orders-panel__header">
+              <div class="orders-panel__title-group">
+                <span class="orders-panel__title">Active orders</span>
+                <span class="orders-panel__count-chip">3</span>
+              </div>
+              <button class="orders-panel__link" type="button">Review all</button>
+            </header>
+
+          </section>
+
+          <section class="market-grid" aria-label="Market snapshot">
+            <div class="market-grid__item">
+              <span class="market-grid__label">Last</span>
+              <div class="market-grid__value">142.80</div>
+              <span class="market-grid__sub market-grid__sub--down">-0.54% (-0.77)</span>
+            </div>
+            <div class="market-grid__item">
+              <span class="market-grid__label">Bid / Ask</span>
+              <div class="market-grid__value">142.70 / 142.95</div>
+              <span class="market-grid__sub">Spread 0.18%</span>
+            </div>
+            <div class="market-grid__item">
+              <span class="market-grid__label">Position</span>
+              <div class="market-grid__value market-grid__value--even">0</div>
+              <span class="market-grid__sub">No position</span>
+            </div>
+          </section>
+
+          <div class="primary-actions" role="group" aria-label="Quick actions">
+            <button class="list-manager" type="button" aria-label="Assign to lists">
+              <svg
+                class="icon-list"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="9" y1="6" x2="21" y2="6" />
+                <line x1="9" y1="12" x2="21" y2="12" />
+                <line x1="9" y1="18" x2="21" y2="18" />
+                <circle cx="4" cy="6" r="1.5" />
+                <circle cx="4" cy="12" r="1.5" />
+                <circle cx="4" cy="18" r="1.5" />
+              </svg>
+            </button>
+            <div class="trade-actions" role="group" aria-label="Place order">
+              <button class="btn-primary btn-sell" type="button">
+                <span class="btn-primary__text">Sell</span>
+              </button>
+              <button class="btn-primary btn-buy" type="button">
+                <span class="btn-primary__text">Buy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="phone-frame">
+      <span class="phone-label">4</span>
+      <section class="action-sheet" role="dialog" aria-modal="true">
+        <header class="sheet-header">
+          <div class="sheet-header__handle-wrapper">
+            <div class="sheet-header__handle"></div>
+          </div>
+
+          <div class="sheet-header__top-row">
+            <div class="sheet-header__info">
+              <h1 class="instrument-name">Yara International</h1>
+              <div class="instrument-meta">
+                <span class="instrument-ticker">YAR - Oslo Bors</span>
+              </div>
+            </div>
+            <button class="sheet-header__close-btn" aria-label="Close">
+              <svg
+                class="icon-close"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="sheet-body">
+          <section class="orders-panel orders-panel--spacious" aria-label="Active orders">
+            <header class="orders-panel__header">
+              <div class="orders-panel__title-group">
+                <span class="orders-panel__title">Active orders</span>
+                <span class="orders-panel__count-chip">5</span>
+              </div>
+              <button class="orders-panel__link" type="button">Review all</button>
+            </header>
+          </section>
+
+          <div class="primary-actions" role="group" aria-label="Quick actions">
+            <button class="list-manager" type="button" aria-label="Assign to lists">
+              <svg
+                class="icon-list"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="9" y1="6" x2="21" y2="6" />
+                <line x1="9" y1="12" x2="21" y2="12" />
+                <line x1="9" y1="18" x2="21" y2="18" />
+                <circle cx="4" cy="6" r="1.5" />
+                <circle cx="4" cy="12" r="1.5" />
+                <circle cx="4" cy="18" r="1.5" />
+              </svg>
+            </button>
+            <div class="trade-actions" role="group" aria-label="Place order">
+              <button class="btn-primary btn-sell" type="button">
+                <span class="btn-primary__text">Sell</span>
+              </button>
+              <button class="btn-primary btn-buy" type="button">
+                <span class="btn-primary__text">Buy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
