@@ -30,7 +30,6 @@
       </filter>
     </defs>
   </svg>
-  
 
   <nav class="variant-nav">
     <a href="quick-actions.html">Quick actions</a>
@@ -155,6 +154,8 @@
           </div>
         </section>
 
+        
+
         <section class="accounts-stack" aria-label="Accounts">
           <article class="account-card portfolio-section portfolio-section--white">
             <header class="account-card__header">
@@ -176,6 +177,7 @@
               <button class="account-pill" type="button">Bonds</button>
               <button class="account-pill" type="button">ETF &amp; ETN</button>
               <button class="account-pill" type="button">Net zero</button>
+              <button class="account-pill" type="button">Active orders <span class="orders-panel__count-chip">0</span></button>
             </div>
 
             <ul class="holdings-list">
@@ -395,6 +397,86 @@
                 </div>
               </li>
             </ul>
+          </article>
+
+          <article class="account-card portfolio-section portfolio-section--white portfolio-section--band">
+            <header class="account-card__header">
+              <div>
+                <span class="account-card__label">TRD</span>
+                <div class="account-card__identity">
+                  <span class="account-number">701122</span>
+                  <h2 class="account-card__name">Viksjø Kapital</h2>
+                </div>
+              </div>
+              <div class="account-card__meta">
+                <span class="account-card__value">NOK 12 940 000</span>
+                <span class="account-card__trend account-card__trend--flat">0.00%</span>
+              </div>
+            </header>
+
+            <div class="account-pill-row" role="tablist" aria-label="Instrument types in 701122 Trading Account">
+              <button class="account-pill is-active" type="button">Active orders <span class="orders-panel__count-chip">2</span></button>
+              <button class="account-pill" type="button">Stocks</button>
+              <button class="account-pill" type="button">ETF &amp; ETN</button>
+              <button class="account-pill" type="button">Other</button>
+            </div>
+
+            <section class="orders-panel" aria-label="Active orders in 701122 Trading Account">
+              <ul class="orders-panel__list">
+                <li>
+                  <button class="orders-card orders-card--inline" type="button" aria-label="Modify order EQNR Buy 500 @ 298.50">
+                    <div class="orders-card__body">
+                      <div class="orders-card__headline">
+                        <span class="orders-card__badge orders-card__badge--limit">Limit</span>
+                        <span class="orders-card__main">EQNR &middot; Buy 500 @ 298.50</span>
+                        <span class="orders-card__meta">Good-til-close &middot; Partial fill</span>
+                      </div>
+                    </div>
+                    <span class="orders-card__icon" aria-hidden="true">
+                      <svg
+                        class="icon-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
+                    </span>
+                  </button>
+                </li>
+                <li>
+                  <button class="orders-card orders-card--inline" type="button" aria-label="Modify order AAPL Sell 200 @ 185.00">
+                    <div class="orders-card__body">
+                      <div class="orders-card__headline">
+                        <span class="orders-card__badge orders-card__badge--stop">Stop</span>
+                        <span class="orders-card__main">AAPL &middot; Sell 200 @ 185.00</span>
+                        <span class="orders-card__meta">Trailing stop (%) &middot; Triggers at 184.50</span>
+                      </div>
+                    </div>
+                    <span class="orders-card__icon" aria-hidden="true">
+                      <svg
+                        class="icon-chevron"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </section>
           </article>
 
           <article class="account-card portfolio-section portfolio-section--white portfolio-section--band">
@@ -694,6 +776,67 @@
         </nav>
 
         <section class="account-sections" aria-label="Account instrument distribution">
+          <article class="portfolio-section portfolio-section--white account-card">
+            <header class="instrument-card__header">
+              <div>
+                <h3 class="holdings-panel__title">Active orders</h3>
+              </div>
+            </header>
+            <ul class="orders-panel__list">
+              <li>
+                <button class="orders-card orders-card--inline" type="button" aria-label="Modify order EQNR Buy 500 @ 298.50">
+                  <div class="orders-card__body">
+                    <div class="orders-card__headline">
+                      <span class="orders-card__badge orders-card__badge--limit">Limit</span>
+                      <span class="orders-card__main">EQNR &middot; Buy 500 @ 298.50</span>
+                      <span class="orders-card__meta">Good-til-close &middot; Partial fill</span>
+                    </div>
+                  </div>
+                  <span class="orders-card__icon" aria-hidden="true">
+                    <svg
+                      class="icon-chevron"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="orders-card orders-card--inline" type="button" aria-label="Modify order AAPL Sell 200 @ 185.00">
+                  <div class="orders-card__body">
+                    <div class="orders-card__headline">
+                      <span class="orders-card__badge orders-card__badge--stop">Stop</span>
+                      <span class="orders-card__main">AAPL &middot; Sell 200 @ 185.00</span>
+                      <span class="orders-card__meta">Trailing stop (%) &middot; Triggers at 184.50</span>
+                    </div>
+                  </div>
+                  <span class="orders-card__icon" aria-hidden="true">
+                    <svg
+                      class="icon-chevron"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </article>
           <article class="portfolio-section portfolio-section--white account-card">
             <header class="instrument-card__header">
               <div>

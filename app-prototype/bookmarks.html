@@ -12,6 +12,24 @@
   <link rel="stylesheet" href="src/style.css" />
 </head>
 <body class="demo-page">
+  <svg width="0" height="0" style="position:absolute;">
+    <defs>
+      <filter id="topo-warp">
+        <!-- Noise field -->
+        <feTurbulence type="fractalNoise"
+                      baseFrequency="0.005 0.012"
+                      numOctaves="2"
+                      seed="7"
+                      result="noise" />
+        <!-- Warp the source using that noise -->
+        <feDisplacementMap in="SourceGraphic"
+                           in2="noise"
+                           scale="50"
+                           xChannelSelector="R"
+                           yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
 
   <nav class="variant-nav">
     <a href="quick-actions.html">Quick actions</a>

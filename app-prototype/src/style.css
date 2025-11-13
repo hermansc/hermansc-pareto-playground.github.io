@@ -116,10 +116,9 @@
   /* 🔧 organic warp */
   filter: url("#topo-warp");
 
-  /* 🔥 fade mask — controls visibility of the lines */
   mask-image: linear-gradient(
     -70deg,
-    rgba(255, 255, 255, 1.0) 0%,     /* left = fade out */   /* right = stronger */
+    rgba(255, 255, 255, 1.0) 0%,
     rgba(255, 255, 255, 0.0) 100%
 );
 
@@ -527,15 +526,77 @@
 .orders-card--inline .orders-card__body {
   flex-direction: row;
   align-items: center;
+  min-width: 0;
 }
 
 .orders-card--inline .orders-card__headline {
   gap: var(--gap-sm);
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  min-width: 0;
+  overflow: visible;
 }
 
 .orders-card--inline .orders-card__meta {
   font-size: 0.72rem;
+}
+
+/* In trading context, never truncate order details; allow wrapping */
+.orders-card--inline .orders-card__main { white-space: normal; }
+.orders-card--inline .orders-card__meta { white-space: normal; }
+
+.orders-card--inline {
+  justify-content: flex-start;
+}
+
+.orders-card--inline .orders-card__icon {
+  margin-left: auto;
+  min-width: 24px;
+  display: inline-flex;
+}
+
+/* Extended inline layout for trading details */
+.orders-card--inline .orders-card__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.orders-card--inline .orders-card__line {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--gap-sm);
+  flex-wrap: wrap;
+}
+
+.orders-card--inline .orders-card__ticker {
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  color: var(--dark-blue);
+}
+
+.orders-card--inline .orders-card__side {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: var(--weight-medium);
+}
+
+.orders-card--inline .orders-card__side--buy { color: var(--main-blue); }
+.orders-card--inline .orders-card__side--sell { color: var(--down-red); }
+
+.orders-card--inline .orders-card__right {
+  margin-left: auto;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--dark-grey);
+  font-size: 0.78rem;
+}
+
+.orders-card--inline .orders-card__type {
+  font-style: italic;
+  color: rgba(15, 26, 45, 0.75);
 }
 
 .btn-primary {
