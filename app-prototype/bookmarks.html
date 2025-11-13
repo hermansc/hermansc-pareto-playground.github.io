@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List Management Sheet</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@300;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body class="demo-page">
+
+  <nav class="variant-nav">
+    <a href="quick-actions.html">Quick actions</a>
+    <a href="bookmarks.html" aria-current="page">Bookmarks</a>
+    <a href="portfolio-overview.html">Portfolio overview</a>
+  </nav>
+
+  <div class="phone-gallery">
+    <div class="phone-frame">
+      <span class="phone-label">1</span>
+      <section class="action-sheet" role="dialog" aria-modal="true" aria-labelledby="lists-title">
+        <header class="sheet-header">
+          <div class="sheet-header__handle-wrapper">
+            <div class="sheet-header__handle"></div>
+          </div>
+
+          <div class="sheet-header__top-row">
+            <div class="sheet-header__info">
+              <h1 class="instrument-name" id="lists-title">Norwegian Air Shuttle</h1>
+              <div class="instrument-meta">
+                <span class="instrument-ticker">NAS - Oslo Bors</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="sheet-body">
+          <section class="lists-panel lists-panel--editing" aria-label="Watchlists">
+            <header class="lists-panel__header">
+              <div class="lists-panel__title-group">
+                <span class="lists-panel__title">Lists</span>
+                <span class="lists-panel__mode">Editing</span>
+              </div>
+              <button class="lists-panel__done" type="button">Done</button>
+            </header>
+
+            <p class="lists-panel__hint">Select or rename lists, then confirm to save.</p>
+
+            <div class="lists-panel__body">
+              <div class="lists-panel__row">
+                <label class="lists-panel__checkbox" for="list-2026">
+                  <input type="checkbox" id="list-2026" checked disabled />
+                  <span class="lists-panel__name">Favoritter 2026</span>
+                </label>
+                <div class="lists-panel__actions">
+                  <button class="lists-panel__action" type="button">Rename</button>
+                  <button class="lists-panel__action lists-panel__action--remove" type="button">Remove</button>
+                </div>
+              </div>
+
+              <div class="lists-panel__row">
+                <label class="lists-panel__checkbox" for="list-seafood">
+                  <input type="checkbox" id="list-seafood" checked disabled />
+                  <span class="lists-panel__name">Havbruk &amp; Sj&oslash;mat</span>
+                </label>
+                <div class="lists-panel__actions">
+                  <button class="lists-panel__action" type="button">Rename</button>
+                  <button class="lists-panel__action lists-panel__action--remove" type="button">Remove</button>
+                </div>
+              </div>
+
+              <div class="lists-panel__row">
+                <label class="lists-panel__checkbox" for="list-2025">
+                  <input type="checkbox" id="list-2025" disabled />
+                  <span class="lists-panel__name">Favoritter 2025</span>
+                </label>
+                <div class="lists-panel__actions">
+                  <button class="lists-panel__action" type="button">Rename</button>
+                  <button class="lists-panel__action lists-panel__action--remove" type="button">Remove</button>
+                </div>
+              </div>
+
+              <div class="lists-panel__row">
+                <label class="lists-panel__checkbox" for="list-research">
+                  <input type="checkbox" id="list-research" disabled />
+                  <span class="lists-panel__name">Pareto anbefalinger 2024/25</span>
+                </label>
+                <div class="lists-panel__actions">
+                  <button class="lists-panel__action" type="button">Rename</button>
+                  <button class="lists-panel__action lists-panel__action--remove" type="button">Remove</button>
+                </div>
+              </div>
+
+              <div class="lists-panel__row lists-panel__row--new">
+                <span class="lists-panel__plus" aria-hidden="true">+</span>
+                <button class="lists-panel__create" type="button">Create new list</button>
+              </div>
+            </div>
+          </section>
+
+          <div class="lists-actions" role="group" aria-label="List actions">
+            <button class="btn-primary lists-actions__confirm" type="button">
+              <span class="btn-primary__text">Confirm changes</span>
+            </button>
+            <button class="lists-actions__undo" type="button">Undo</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="phone-frame">
+      <span class="phone-label">2</span>
+      <section class="action-sheet" role="dialog" aria-modal="true" aria-labelledby="lists-title-view">
+        <header class="sheet-header">
+          <div class="sheet-header__handle-wrapper">
+            <div class="sheet-header__handle"></div>
+          </div>
+
+          <div class="sheet-header__top-row">
+            <div class="sheet-header__info">
+              <h1 class="instrument-name" id="lists-title-view">Norwegian Air Shuttle</h1>
+              <div class="instrument-meta">
+                <span class="instrument-ticker">NAS - Oslo Bors</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="sheet-body">
+          <section class="lists-panel lists-panel--view" aria-label="Watchlists">
+            <header class="lists-panel__header">
+              <span class="lists-panel__title">Lists</span>
+              <div class="lists-panel__cta">
+                <button class="lists-panel__manage" type="button">Manage</button>
+              </div>
+            </header>
+
+            <div class="lists-panel__body">
+              <label class="lists-panel__row">
+                <span class="lists-panel__checkbox">
+                  <input type="checkbox" checked />
+                  <span class="lists-panel__name">Favoritter 2026</span>
+                </span>
+              </label>
+              <label class="lists-panel__row">
+                <span class="lists-panel__checkbox">
+                  <input type="checkbox" checked />
+                  <span class="lists-panel__name">Havbruk &amp; Sj&oslash;mat</span>
+                </span>
+              </label>
+              <label class="lists-panel__row">
+                <span class="lists-panel__checkbox">
+                  <input type="checkbox" />
+                  <span class="lists-panel__name">Favoritter 2025</span>
+                </span>
+              </label>
+              <label class="lists-panel__row">
+                <span class="lists-panel__checkbox">
+                  <input type="checkbox" />
+                  <span class="lists-panel__name">Pareto anbefalinger 2024/25</span>
+                </span>
+              </label>
+              <div class="lists-panel__row lists-panel__row--new">
+                <span class="lists-panel__plus" aria-hidden="true">+</span>
+                <button class="lists-panel__create" type="button">Create new list</button>
+              </div>
+            </div>
+          </section>
+
+          <div class="lists-actions" role="group" aria-label="List actions">
+            <button class="lists-actions__confirm lists-actions__confirm--ghost" type="button">
+              Save changes
+            </button>
+            <button class="lists-actions__undo" type="button">Undo</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
