@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pareto Securities | The Complete Trading Platform</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Custom JS (Includes Tailwind Config) -->
+    <script src="script.js"></script>
+</head>
+
+<body class="antialiased selection:bg-pareto-magenta selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 border-b border-white/5 bg-pareto-darkBlue/95 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="#" class="block hover:opacity-80 transition-opacity">
+                    <!-- Replaced SVG with IMG -->
+                    <img src="https://paretosec.no/images/18.18c6b8dc18b37d54b3d1302/1697474659350/pareto-Logo.svg"
+                        alt="Pareto Securities" class="h-7 w-auto">
+                </a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-pareto-darkGrey">
+                <a href="#retail" class="hover:text-white transition-colors">Retail</a>
+                <a href="#active" class="hover:text-white transition-colors">Active</a>
+                <a href="#research" class="hover:text-white transition-colors">Research</a>
+                <a href="#algo" class="hover:text-white transition-colors">Pro</a>
+                <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="#"
+                    class="bg-pareto-magenta hover:bg-pareto-magentaHover text-white px-6 py-2.5 rounded-md text-sm font-medium transition-all shadow-lg shadow-pareto-magenta/20 hover:shadow-pareto-magenta/40">
+                    Become a Client
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="relative pt-44 pb-32 overflow-hidden">
+        <div class="absolute inset-0 grid-bg z-0 pointer-events-none"></div>
+        <!-- Ambient Glows -->
+        <div
+            class="absolute top-20 right-0 w-[600px] h-[600px] bg-pareto-mainBlue/40 rounded-full blur-[120px] -z-10 opacity-50">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-pareto-nordicBlue/10 rounded-full blur-[100px] -z-10">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+
+                <div class="lg:w-5/12 space-y-8 reveal active">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-pareto-nordicBlue">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pareto-positive opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-pareto-positive"></span>
+                        </span>
+                        Professional Standard for All
+                    </div>
+
+                    <h1 class="text-5xl lg:text-7xl font-serif font-light tracking-tight leading-relaxed">
+                        Trading for everyone. <br>
+                        <span
+                            class="block mt-4 font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-pareto-nordicBlue">
+                            Tools for the best.
+                        </span>
+                    </h1>
+
+                    <p class="text-lg text-pareto-darkGrey max-w-xl leading-relaxed font-light">
+                        One platform for stock trading, analysis, and professional tools. Whether you trade once a month
+                        or every second, Pareto Securities gives you the edge of a full-service investment bank.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <button
+                            class="bg-pareto-magenta hover:bg-pareto-magentaHover text-white px-8 py-4 rounded-lg font-medium transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(222,0,128,0.3)] hover:shadow-[0_0_30px_rgba(222,0,128,0.5)] hover:-translate-y-1">
+                            Become a Client <span class="opacity-70 font-normal text-xs ml-1">(BankID)</span>
+                        </button>
+                        <button
+                            class="glass-panel hover:bg-white/5 text-white px-8 py-4 rounded-lg font-medium transition-all border border-pareto-darkGrey/30 hover:-translate-y-1">
+                            View Platform
+                        </button>
+                    </div>
+
+                    <!-- Mobile App Badges -->
+                    <div class="pt-6">
+                        <p class="text-xs text-gray-500 mb-3 uppercase tracking-wider">Available on iOS & Android</p>
+                        <div class="flex gap-4">
+                            <button
+                                class="bg-white/5 border border-white/10 hover:bg-white/10 rounded-lg px-4 py-2 flex items-center gap-2 transition-colors">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg"
+                                    class="w-4 h-4" alt="Apple">
+                                <div class="text-left">
+                                    <div class="text-[10px] text-gray-400 leading-none">Download on the</div>
+                                    <div class="text-xs font-bold text-white leading-none mt-0.5">App Store</div>
+                                </div>
+                            </button>
+                            <button
+                                class="bg-white/5 border border-white/10 hover:bg-white/10 rounded-lg px-4 py-2 flex items-center gap-2 transition-colors">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg"
+                                    class="w-4 h-4" alt="Android">
+                                <div class="text-left">
+                                    <div class="text-[10px] text-gray-400 leading-none">Get it on</div>
+                                    <div class="text-xs font-bold text-white leading-none mt-0.5">Google Play</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual: Desktop + Mobile Placeholder -->
+                <div class="lg:w-7/12 relative perspective-1000 reveal active delay-200">
+                    <!-- Desktop Mockup -->
+                    <div
+                        class="relative bg-[#0b1221] border border-pareto-darkGrey/30 rounded-xl shadow-2xl w-full aspect-[16/10] overflow-hidden transform rotate-y-[-5deg] rotate-x-[3deg] hover:rotate-0 transition-transform duration-700 ease-out group z-10">
+                        <!-- Placeholder for Desktop Screenshot -->
+                        <img src="images/infront-web-trader.png" alt="Infront Web Trader Interface"
+                            class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity">
+
+                        <!-- Reflection overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none">
+                        </div>
+                    </div>
+
+                    <!-- Mobile Mockup (Floating) -->
+                    <div
+                        class="absolute -bottom-10 -left-10 w-[200px] bg-black border-[8px] border-gray-800 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden animate-float z-20">
+                        <!-- Placeholder for Mobile Screenshot -->
+                        <img src="images/mobile-app.png" alt="Mobile App" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof (Ticker Animation) -->
+    <section class="border-y border-white/5 bg-pareto-mainBlue/10 backdrop-blur-sm py-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div
+                class="flex items-center gap-16 animate-scroll whitespace-nowrap text-gray-400 text-sm font-medium uppercase tracking-wider">
+                <div class="flex items-center gap-3"><i data-lucide="award" class="text-pareto-gold"></i> Leading Nordic
+                    Broker</div>
+                <div class="flex items-center gap-3"><i data-lucide="bar-chart-2" class="text-pareto-nordicBlue"></i>
+                    Analysis on 300+ Companies</div>
+                <div class="flex items-center gap-3"><i data-lucide="globe" class="text-pareto-thyme"></i> Access to 16
+                    Markets</div>
+                <div class="flex items-center gap-3"><i data-lucide="shield" class="text-white"></i> 30+ Years
+                    Experience</div>
+                <!-- Duplicate for infinite loop illusion -->
+                <div class="flex items-center gap-3"><i data-lucide="award" class="text-pareto-gold"></i> Leading Nordic
+                    Broker</div>
+                <div class="flex items-center gap-3"><i data-lucide="bar-chart-2" class="text-pareto-nordicBlue"></i>
+                    Analysis on 300+ Companies</div>
+                <div class="flex items-center gap-3"><i data-lucide="globe" class="text-pareto-thyme"></i> Access to 16
+                    Markets</div>
+                <div class="flex items-center gap-3"><i data-lucide="shield" class="text-white"></i> 30+ Years
+                    Experience</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pareto START (Welcome Offer) -->
+    <section class="py-16 bg-[#0b1221] scroll-mt-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div
+                class="glass-panel rounded-3xl p-8 md:p-12 border-pareto-magenta/30 bg-gradient-to-r from-pareto-mainBlue/50 to-[#0b1221] reveal">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div
+                            class="inline-block bg-pareto-magenta/20 text-pareto-magenta text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
+                            Welcome Offer</div>
+                        <h2 class="text-3xl font-serif text-white mb-4 leading-tight">Pareto START</h2>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Experience the full power of a professional desk from day one. New clients get our best
+                            conditions for the first 3 months.
+                        </p>
+                        <div class="flex gap-4 items-end">
+                            <div class="text-4xl font-bold text-white">0.03%</div>
+                            <div class="text-sm text-gray-400 mb-1">Commission (min 19 NOK)</div>
+                        </div>
+                        <button
+                            class="mt-8 bg-white text-pareto-darkBlue font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105">
+                            Register in 3 minutes
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Benefit 1 -->
+                        <div class="glass-panel p-4 rounded-xl flex items-start gap-3 hover:bg-white/5 cursor-default">
+                            <div class="bg-pareto-nordicBlue/20 p-2 rounded-lg"><i data-lucide="monitor"
+                                    class="text-pareto-nordicBlue w-5 h-5"></i></div>
+                            <div>
+                                <div class="font-bold text-sm">Infront Web Trader</div>
+                                <div class="text-xs text-gray-400">Free access (Value: 260 NOK/mo)</div>
+                            </div>
+                        </div>
+                        <!-- Benefit 2 -->
+                        <div class="glass-panel p-4 rounded-xl flex items-start gap-3 hover:bg-white/5 cursor-default">
+                            <div class="bg-pareto-nordicBlue/20 p-2 rounded-lg"><i data-lucide="zap"
+                                    class="text-pareto-nordicBlue w-5 h-5"></i></div>
+                            <div>
+                                <div class="font-bold text-sm">Real-time Data</div>
+                                <div class="text-xs text-gray-400">Full depth OSE & Nasdaq Nordic</div>
+                            </div>
+                        </div>
+                        <!-- Benefit 3 -->
+                        <div class="glass-panel p-4 rounded-xl flex items-start gap-3 hover:bg-white/5 cursor-default">
+                            <div class="bg-pareto-nordicBlue/20 p-2 rounded-lg"><i data-lucide="file-text"
+                                    class="text-pareto-nordicBlue w-5 h-5"></i></div>
+                            <div>
+                                <div class="font-bold text-sm">Full Analysis</div>
+                                <div class="text-xs text-gray-400">Reports on 300+ companies</div>
+                            </div>
+                        </div>
+                        <!-- Benefit 4 -->
+                        <div class="glass-panel p-4 rounded-xl flex items-start gap-3 hover:bg-white/5 cursor-default">
+                            <div class="bg-pareto-nordicBlue/20 p-2 rounded-lg"><i data-lucide="trending-up"
+                                    class="text-pareto-nordicBlue w-5 h-5"></i></div>
+                            <div>
+                                <div class="font-bold text-sm">Investtech</div>
+                                <div class="text-xs text-gray-400">Technical analysis included</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEGMENT 1: RETAIL -->
+    <section id="retail" class="py-32 relative scroll-mt-20 bg-gradient-to-b from-[#0b1221] to-[#0f1829]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-start gap-16">
+                <div class="md:w-5/12 sticky top-32 reveal">
+                    <div class="text-pareto-nordicBlue font-bold mb-4 uppercase tracking-widest text-xs">For Retail
+                        Investors</div>
+                    <h2 class="text-4xl md:text-5xl font-serif font-light mb-6 text-white leading-tight">The
+                        professional standard, <span class="text-pareto-nordicBlue">democratized</span>.</h2>
+                    <p class="text-gray-400 text-lg mb-8 font-light leading-relaxed">
+                        Why trade on a simplified app when you can use the same tools as the pros? We believe retail
+                        investors deserve the full picture.
+                    </p>
+                    <div class="flex gap-4">
+                        <button
+                            class="bg-white text-pareto-darkBlue hover:bg-gray-200 px-8 py-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl">Open
+                            Account</button>
+                    </div>
+                </div>
+
+                <div class="md:w-7/12 grid grid-cols-1 gap-6 reveal delay-200">
+                    <!-- Feature 1 -->
+                    <div class="glass-panel p-8 rounded-2xl border-l-4 border-pareto-nordicBlue group">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3
+                                class="text-xl font-bold text-white group-hover:text-pareto-nordicBlue transition-colors">
+                                Integrated Analysis</h3>
+                            <i data-lucide="pie-chart" class="text-pareto-nordicBlue"></i>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            See professional price targets and recommendations inside the order book. Don't switch tabs
+                            to check if a stock is a "Buy"—it's right there on the execution screen.
+                        </p>
+                        <div class="bg-[#0b1221] p-4 rounded text-xs font-mono text-gray-500 border border-white/5">
+                            <div class="flex justify-between mb-1"><span>Target Price</span> <span
+                                    class="text-white">145.00 NOK</span></div>
+                            <div class="flex justify-between"><span>Consensus</span> <span
+                                    class="text-pareto-thyme animate-pulse">Strong Buy</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="glass-panel p-8 rounded-2xl border-l-4 border-pareto-nordicBlue group">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3
+                                class="text-xl font-bold text-white group-hover:text-pareto-nordicBlue transition-colors">
+                                Level 2 Data (Market Depth)</h3>
+                            <i data-lucide="layers" class="text-pareto-nordicBlue"></i>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            Most apps show you the current price. We show you the liquidity. See the buy and sell walls,
+                            understand the spread, and time your entry perfectly.
+                        </p>
+                        <!-- Mini Order Book Visual -->
+                        <div
+                            class="bg-[#0b1221] rounded border border-white/5 overflow-hidden font-mono text-[10px] w-full opacity-90 group-hover:opacity-100 transition-opacity">
+                            <!-- Header -->
+                            <div class="grid grid-cols-2 border-b border-white/5 bg-white/5">
+                                <div class="p-1.5 text-center text-pareto-thyme font-bold uppercase tracking-wider">Bid
+                                </div>
+                                <div class="p-1.5 text-center text-pareto-negative font-bold uppercase tracking-wider">
+                                    Ask</div>
+                            </div>
+                            <!-- Order Book Rows -->
+                            <div class="grid grid-cols-2 divide-x divide-white/5">
+                                <!-- Bids -->
+                                <div class="flex flex-col">
+                                    <!-- Row 1 -->
+                                    <div class="relative flex justify-between px-2 py-1">
+                                        <div class="absolute inset-y-0 right-0 bg-pareto-thyme/20 w-[90%]"></div>
+                                        <span class="relative z-10 text-gray-500">500</span>
+                                        <span class="relative z-10 text-white font-medium">145.00</span>
+                                    </div>
+                                    <!-- Row 2 -->
+                                    <div class="relative flex justify-between px-2 py-1">
+                                        <div class="absolute inset-y-0 right-0 bg-pareto-thyme/20 w-[60%]"></div>
+                                        <span class="relative z-10 text-gray-500">250</span>
+                                        <span class="relative z-10 text-white font-medium">144.95</span>
+                                    </div>
+                                    <!-- Row 3 -->
+                                    <div class="relative flex justify-between px-2 py-1">
+                                        <div class="absolute inset-y-0 right-0 bg-pareto-thyme/20 w-[40%]"></div>
+                                        <span class="relative z-10 text-gray-500">100</span>
+                                        <span class="relative z-10 text-white font-medium">144.90</span>
+                                    </div>
+                                </div>
+                                <!-- Asks -->
+                                <div class="flex flex-col">
+                                    <!-- Row 1 -->
+                                    <div class="relative flex justify-between px-2 py-1">
+                                        <div class="absolute inset-y-0 left-0 bg-pareto-negative/20 w-[80%]"></div>
+                                        <span class="relative z-10 text-white font-medium">145.05</span>
+                                        <span class="relative z-10 text-gray-500">450</span>
+                                    </div>
+                                    <!-- Row 2 -->
+                                    <div class="relative flex justify-between px-2 py-1">
+                                        <div class="absolute inset-y-0 left-0 bg-pareto-negative/20 w-[30%]"></div>
+                                        <span class="relative z-10 text-white font-medium">145.10</span>
+                                        <span class="relative z-10 text-gray-500">120</span>
+                                    </div>
+                                    <!-- Row 3 -->
+                                    <div class="relative flex justify-between px-2 py-1">
+                                        <div class="absolute inset-y-0 left-0 bg-pareto-negative/20 w-[50%]"></div>
+                                        <span class="relative z-10 text-white font-medium">145.15</span>
+                                        <span class="relative z-10 text-gray-500">300</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="glass-panel p-8 rounded-2xl border-l-4 border-pareto-nordicBlue group">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3
+                                class="text-xl font-bold text-white group-hover:text-pareto-nordicBlue transition-colors">
+                                Real US Trading</h3>
+                            <i data-lucide="flag" class="text-pareto-nordicBlue"></i>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            Direct market access to NYSE and Nasdaq. No CFDs, no synthetic ownership. You own the stock,
+                            with proper execution and tax reporting in one solution.
+                        </p>
+                        <div class="space-y-3 mt-4 pt-4 border-t border-white/10">
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="clock" class="w-4 h-4 text-pareto-nordicBlue mt-0.5 flex-shrink-0"></i>
+                                <p class="text-gray-300 text-xs leading-relaxed">
+                                    <span class="font-semibold text-white">Extended trading hours:</span> Pre-market
+                                    from 10:00 and after-hours until 23:30 (Norwegian time). Don't miss major moves
+                                    outside Wall Street's regular hours.
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="dollar-sign"
+                                    class="w-4 h-4 text-pareto-nordicBlue mt-0.5 flex-shrink-0"></i>
+                                <p class="text-gray-300 text-xs leading-relaxed">
+                                    <span class="font-semibold text-white">Smart currency handling:</span> Automatic net
+                                    conversion in USD, or use a currency account for hedging and self-managed FX.
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="trending-down"
+                                    class="w-4 h-4 text-pareto-nordicBlue mt-0.5 flex-shrink-0"></i>
+                                <p class="text-gray-300 text-xs leading-relaxed">
+                                    <span class="font-semibold text-white">Short 1000+ US stocks:</span> Access to
+                                    shorting on NYSE and Nasdaq with professional risk management and margin facilities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEGMENT 2: RESEARCH -->
+    <section id="pricing"
+        class="py-32 relative overflow-hidden bg-gradient-to-b from-[#e8ecf1] to-[#f5f7fa] border-t border-gray-200 scroll-mt-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Column: Visuals -->
+                <div class="order-2 lg:order-1 reveal relative">
+                    <!-- Background decoration -->
+                    <div
+                        class="absolute -left-20 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pareto-gold/5 rounded-full blur-[100px] -z-10">
+                    </div>
+
+                    <!-- Morning Report Card (Hero) -->
+                    <div
+                        class="bg-white text-pareto-darkBlue p-8 rounded-2xl shadow-2xl transform hover:-translate-y-1 transition-transform duration-500 relative z-20 mb-8 max-w-lg">
+                        <div class="flex justify-between items-center mb-6 border-b border-gray-100 pb-4">
+                            <span class="text-xs font-bold uppercase tracking-widest text-pareto-magenta">Daily
+                                Briefing</span>
+                            <span class="text-xs text-gray-400 font-mono">08:00 AM</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-2xl mb-3 leading-tight">Nordic Energy: The Supercycle
+                            Continues</h4>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                            Higher oil prices drive upgrade cycle for offshore drillers. We raise target prices for key
+                            players as utilization hits multi-year highs.
+                        </p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gray-200 overflow-hidden border-2 border-white shadow-sm">
+                                <img src="https://placehold.co/100x100/e2e8f0/64748b?text=EH" alt="Analyst"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="text-xs">
+                                <div class="font-bold text-pareto-darkBlue">Eirik Haavaldsen</div>
+                                <div class="text-gray-500">Head of Research</div>
+                            </div>
+                            <a href="#"
+                                class="ml-auto text-xs font-bold text-pareto-mainBlue hover:text-pareto-magenta transition-colors flex items-center gap-1">
+                                Read Report <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Investtech Card (Floating/Overlapping) -->
+                    <div
+                        class="absolute -right-12 top-1/2 transform -translate-y-1/2 translate-x-0 bg-[#0f172a] border border-gray-700/50 p-5 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-30 w-64 hidden md:block hover:scale-105 transition-transform duration-300 backdrop-blur-xl">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-2">
+                                <div class="bg-pareto-gold/10 p-1.5 rounded"><i data-lucide="bar-chart-2"
+                                        class="w-4 h-4 text-pareto-gold"></i></div>
+                                <span class="font-bold text-white text-sm">Investtech</span>
+                            </div>
+                            <span
+                                class="bg-pareto-thyme/20 text-pareto-thyme text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wide">Buy
+                                Signal</span>
+                        </div>
+                        <div class="h-24 flex items-end justify-between gap-1 mb-4 px-1 border-b border-white/5 pb-4">
+                            <!-- Mini Candles -->
+                            <div class="w-2 bg-pareto-negative h-[40%] rounded-sm opacity-80"></div>
+                            <div class="w-2 bg-pareto-negative h-[30%] rounded-sm opacity-80"></div>
+                            <div class="w-2 bg-pareto-thyme h-[50%] rounded-sm"></div>
+                            <div class="w-2 bg-pareto-thyme h-[45%] rounded-sm"></div>
+                            <div class="w-2 bg-pareto-thyme h-[70%] rounded-sm"></div>
+                            <div class="w-2 bg-pareto-negative h-[60%] rounded-sm opacity-80"></div>
+                            <div class="w-2 bg-pareto-thyme h-[85%] rounded-sm"></div>
+                            <div
+                                class="w-2 bg-pareto-thyme h-[95%] rounded-sm animate-pulse shadow-[0_0_10px_rgba(114,156,140,0.5)]">
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-400 leading-snug">
+                            <span class="text-white font-bold">EQNR</span> broke resistance at 320. Potential upside to
+                            350.
+                        </div>
+                    </div>
+
+                    <!-- Sector Card (Stacked) -->
+                    <div
+                        class="bg-gray-800/50 p-4 rounded-xl border border-gray-700/50 hover:border-pareto-nordicBlue/50 transition-colors flex items-center gap-4 max-w-xs backdrop-blur-sm relative z-10">
+                        <div class="bg-pareto-nordicBlue/10 p-3 rounded-lg">
+                            <i data-lucide="anchor" class="w-5 h-5 text-pareto-nordicBlue"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Seafood Sector</h4>
+                            <p class="text-[10px] text-gray-400 uppercase tracking-wider">Weekly Update</p>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-4 h-4 text-gray-600 ml-auto"></i>
+                    </div>
+                </div>
+
+                <!-- Right Column: Copy -->
+                <div class="order-1 lg:order-2 reveal delay-200">
+                    <div class="text-pareto-gold font-bold mb-4 uppercase tracking-widest text-xs">For Research-Driven
+                        Investors</div>
+                    <h2 class="text-4xl md:text-5xl font-serif font-light mb-6 text-white leading-tight">Information
+                        asymmetry, <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-pareto-gold to-yellow-200 font-bold">solved</span>.
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-8 font-light leading-relaxed">
+                        Stop trading on headlines. Start trading on conviction. Get access to the same analysis, morning
+                        briefs, and sector reports used by institutional fund managers.
+                    </p>
+
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i data-lucide="check" class="text-pareto-gold w-5 h-5"></i>
+                            <span>Daily Morning Reports & Sector Updates</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i data-lucide="check" class="text-pareto-gold w-5 h-5"></i>
+                            <span><strong>Investtech</strong> Technical Analysis included</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i data-lucide="check" class="text-pareto-gold w-5 h-5"></i>
+                            <span>Exclusive CEO Webinars & Events</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i data-lucide="check" class="text-pareto-gold w-5 h-5"></i>
+                            <span>Model Portfolios (Nordic & International)</span>
+                        </li>
+                    </ul>
+
+                    <div class="flex gap-4">
+                        <button
+                            class="bg-pareto-gold text-pareto-darkBlue hover:bg-yellow-400 px-8 py-4 rounded-lg font-bold transition-all shadow-[0_0_20px_rgba(255,194,0,0.2)] hover:shadow-[0_0_30px_rgba(255,194,0,0.4)]">
+                            Get Research Access
+                        </button>
+                        <button class="text-white px-6 py-4 rounded-lg font-medium hover:bg-white/5 transition-all">
+                            View Sample Report
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEGMENT 3: ACTIVE TRADERS / SOR -->
+    <section id="active"
+        class="py-32 relative overflow-hidden scroll-mt-20 bg-gradient-to-b from-[#141b2e] to-[#1a2235]">
+        <!-- Background Glow -->
+        <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-pareto-magenta/5 rounded-full blur-[120px] -z-10">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <div class="text-pareto-magenta font-bold mb-4 uppercase tracking-widest text-xs">For Active Traders
+                </div>
+                <h2 class="text-4xl md:text-5xl font-serif font-light mb-6 text-white leading-tight">Execution is <span
+                        class="text-pareto-magenta font-bold">Edge</span>.</h2>
+                <p class="text-gray-400 text-lg font-light">
+                    High volume demands high performance. Did you know <strong>40% of Norwegian trading volume</strong>
+                    happens outside Oslo Børs? Our SOR ensures you don't miss it.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+                <!-- SOR Visualizer (Recreated from Image) -->
+                <div
+                    class="lg:col-span-7 glass-panel p-12 rounded-3xl relative overflow-hidden flex flex-col justify-center items-center min-h-[400px] reveal">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#0f172a] to-[#020617] opacity-90 -z-10"></div>
+
+                    <div class="flex flex-col md:flex-row items-center gap-12 w-full max-w-3xl">
+
+                        <!-- Left: Order Ticket -->
+                        <div
+                            class="bg-white text-pareto-surface rounded-xl p-6 shadow-2xl w-full md:w-64 relative z-20 transform transition-transform hover:scale-105">
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="font-bold text-lg">Order</span>
+                                <span class="bg-gray-200 text-xs font-bold px-2 py-1 rounded text-gray-600">LIMIT</span>
+                            </div>
+                            <div class="text-4xl font-bold mb-1">EQNR</div>
+                            <div class="text-sm text-gray-500">5,000 shares @ 320.50</div>
+                        </div>
+
+                        <!-- Center: The Brain (SOR) -->
+                        <div class="relative flex flex-col items-center justify-center z-10">
+                            <!-- Vertical Beam -->
+                            <div
+                                class="absolute w-1 h-[150%] bg-gradient-to-b from-transparent via-blue-500 to-transparent animate-pulse">
+                            </div>
+                            <!-- Scanning Beam -->
+                            <div class="absolute w-1 h-20 bg-white blur-sm animate-scan z-20"></div>
+
+                            <div
+                                class="w-28 h-28 bg-blue-600 rounded-full flex items-center justify-center shadow-[0_0_60px_rgba(37,99,235,0.6)] relative z-30 border-4 border-[#0f172a]">
+                                <i data-lucide="cpu" class="w-12 h-12 text-white"></i>
+                            </div>
+                            <div class="mt-4 text-center">
+                                <div class="font-bold text-white text-lg">Pareto SOR</div>
+                                <div class="text-xs text-blue-400 animate-pulse">Scanning Venues...</div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Venues -->
+                        <div class="flex flex-col gap-3 w-full md:w-64 z-20">
+                            <div
+                                class="bg-[#0f1f38] border border-green-500/30 p-4 rounded-xl flex justify-between items-center shadow-lg hover:border-green-500 transition-colors">
+                                <span class="font-mono text-sm text-gray-300">Oslo Børs</span>
+                                <span class="text-green-400 text-xs font-bold animate-pulse">FOUND 2,000</span>
+                            </div>
+                            <div
+                                class="bg-[#0f1f38] border border-green-500/30 p-4 rounded-xl flex justify-between items-center shadow-lg hover:border-green-500 transition-colors">
+                                <span class="font-mono text-sm text-gray-300">Cboe Europe</span>
+                                <span class="text-green-400 text-xs font-bold animate-pulse delay-100">FOUND
+                                    1,500</span>
+                            </div>
+                            <div
+                                class="bg-[#0f1f38] border border-green-500/30 p-4 rounded-xl flex justify-between items-center shadow-lg hover:border-green-500 transition-colors">
+                                <span class="font-mono text-sm text-gray-300">Turquoise</span>
+                                <span class="text-green-400 text-xs font-bold animate-pulse delay-200">FOUND
+                                    1,500</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Features & Negotiation -->
+                <div class="lg:col-span-5 flex flex-col gap-6 reveal delay-200">
+                    <div class="glass-panel p-8 rounded-3xl">
+                        <h3 class="text-xl font-bold text-white mb-4">Advanced Order Types</h3>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div class="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
+                                <div class="font-bold text-white mb-1">Iceberg</div>
+                                <div class="text-xs text-gray-500">Hide large size</div>
+                            </div>
+                            <div class="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
+                                <div class="font-bold text-white mb-1">Stop-Loss</div>
+                                <div class="text-xs text-gray-500">Protect downside</div>
+                            </div>
+                            <div class="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
+                                <div class="font-bold text-white mb-1">Fill or Kill</div>
+                                <div class="text-xs text-gray-500">All or nothing</div>
+                            </div>
+                            <div class="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
+                                <div class="font-bold text-white mb-1">Trailing Stop</div>
+                                <div class="text-xs text-gray-500">Follow the trend</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="glass-panel p-8 rounded-3xl border border-pareto-magenta/30 bg-gradient-to-br from-pareto-magenta/10 to-transparent">
+                        <h3 class="text-xl font-bold text-white mb-2">Volume Pricing</h3>
+                        <p class="text-gray-400 text-sm mb-6">
+                            Active traders shouldn't pay standard rates. We offer negotiated commission structures for
+                            high-volume clients.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div class="text-3xl font-bold text-white">1.19 <span
+                                    class="text-sm font-normal text-gray-400">bps</span></div>
+                            <div class="text-xs text-gray-500">Avg. price improvement via SOR (2024)</div>
+                        </div>
+                        <button
+                            class="w-full mt-6 bg-pareto-magenta text-white hover:bg-pareto-magentaHover py-3 rounded-lg font-bold transition-all">Contact
+                            Trading Desk</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEGMENT 4: ALGO / PRO -->
+    <section id="algo"
+        class="py-32 bg-gradient-to-b from-[#1a2235] to-[#e8ecf1] text-gray-900 border-t border-gray-200 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-16">
+                <div class="md:w-1/3 reveal">
+                    <div class="text-gray-500 font-bold mb-4 uppercase tracking-widest text-xs">For Algo / Pro Users
+                    </div>
+                    <h2 class="text-4xl font-serif font-light mb-6 leading-tight">The Engine Room.</h2>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        Institutional algorithms available to private clients. Minimize slippage and optimize execution
+                        quality using the same tools as the largest funds.
+                    </p>
+                    <ul class="space-y-4 text-sm text-gray-500 font-mono">
+                        <li class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-pareto-mainBlue rounded-full animate-pulse"></div> LOW LATENCY
+                            EXECUTION
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-pareto-mainBlue rounded-full animate-pulse delay-75"></div> REAL-TIME
+                            MONITORING
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-pareto-mainBlue rounded-full animate-pulse delay-150"></div> DIRECT
+                            MARKET ACCESS
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6 reveal delay-200">
+                    <!-- Algo Card 1 -->
+                    <div
+                        class="border border-gray-800 bg-gray-900/50 p-6 rounded-lg hover:border-gray-600 transition-colors cursor-pointer group">
+                        <h4 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400 transition-colors">VWAP
+                        </h4>
+                        <p class="text-xs text-gray-500 mb-4">Volume Weighted Average Price</p>
+                        <p class="text-sm text-gray-400">Execute orders in line with the market volume profile to
+                            minimize impact.</p>
+                    </div>
+                    <!-- Algo Card 2 -->
+                    <div
+                        class="border border-gray-800 bg-gray-900/50 p-6 rounded-lg hover:border-gray-600 transition-colors cursor-pointer group">
+                        <h4 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400 transition-colors">TWAP
+                        </h4>
+                        <p class="text-xs text-gray-500 mb-4">Time Weighted Average Price</p>
+                        <p class="text-sm text-gray-400">Spread execution evenly over a specified time horizon.</p>
+                    </div>
+                    <!-- Algo Card 3 -->
+                    <div
+                        class="border border-gray-800 bg-gray-900/50 p-6 rounded-lg hover:border-gray-600 transition-colors cursor-pointer group">
+                        <h4 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400 transition-colors">
+                            Implementation Shortfall</h4>
+                        <p class="text-xs text-gray-500 mb-4">Arrival Price Strategy</p>
+                        <p class="text-sm text-gray-400">Balances the cost of market impact against the risk of price
+                            drift.</p>
+                    </div>
+                    <!-- Algo Card 4 -->
+                    <div
+                        class="border border-gray-800 bg-gray-900/50 p-6 rounded-lg hover:border-gray-600 transition-colors cursor-pointer group">
+                        <h4 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400 transition-colors">Custom
+                            Setup</h4>
+                        <p class="text-xs text-gray-500 mb-4">Tailored Aggression</p>
+                        <p class="text-sm text-gray-400">Define your own parameters for aggressiveness and participation
+                            rates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Partner Section -->
+    <section class="py-24 relative bg-[#e8ecf1]">
+        <div
+            class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-pareto-magenta to-transparent opacity-70 pointer-events-none">
+        </div>
+        <div
+            class="absolute -inset-x-10 top-10 h-64 bg-gradient-to-b from-pareto-mainBlue/20 to-transparent blur-[120px] opacity-60 pointer-events-none">
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 relative">
+            <div
+                class="rounded-[40px] border border-white/10 bg-gradient-to-br from-[#091227] via-[#050b18] to-[#03060d] px-8 md:px-16 py-16 text-center shadow-[0_40px_120px_rgba(0,0,0,0.5)]">
+                <p class="text-pareto-magenta uppercase tracking-[0.4em] text-xs font-bold mb-6">Private Banking DNA</p>
+                <h2 class="text-4xl md:text-5xl font-serif font-light text-white leading-tight mb-4">
+                    More than just an app.<br>
+                    <span class="font-semibold">We are your financial partner.</span>
+                </h2>
+                <p class="text-pareto-darkGrey text-base md:text-lg max-w-3xl mx-auto leading-relaxed mb-12">
+                    When you trade with Pareto, you aren&apos;t just a user ID in a database. You get full access to a
+                    Nordic investment bank with human brokers, capital markets, and bespoke project finance expertise.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-12">
+                    <div class="flex items-start gap-4 glass-panel rounded-2xl p-6 bg-white/5 border border-white/10">
+                        <div class="bg-pareto-mainBlue/20 p-3 rounded-xl">
+                            <i data-lucide="users" class="text-pareto-mainBlue w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-1">Human Brokers</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Direct access to our trading desk for
+                                complex orders or market color.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 glass-panel rounded-2xl p-6 bg-white/5 border border-white/10">
+                        <div class="bg-pareto-mainBlue/20 p-3 rounded-xl">
+                            <i data-lucide="briefcase" class="text-pareto-mainBlue w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-1">IPOs &amp; ECM</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Participate in capital raises and listings
+                                often reserved for institutional clients.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 glass-panel rounded-2xl p-6 bg-white/5 border border-white/10">
+                        <div class="bg-pareto-mainBlue/20 p-3 rounded-xl">
+                            <i data-lucide="globe" class="text-pareto-mainBlue w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-1">Project Finance</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Access direct investment opportunities
+                                within real estate, shipping, and energy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    class="mx-auto inline-flex items-center justify-center bg-white text-pareto-darkBlue px-10 py-4 rounded-2xl font-semibold text-lg shadow-[0_15px_40px_rgba(255,255,255,0.2)] transition-transform hover:-translate-y-0.5 hover:bg-gray-100">
+                    Talk to a Broker
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Pricing -->
+    <section id="pricing"
+        class="py-28 bg-gradient-to-b from-[#050a14] via-[#07122a] to-[#0b182e] text-white scroll-mt-20 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="w-[900px] h-[900px] bg-pareto-magenta/10 blur-[160px] absolute -top-40 -right-20"></div>
+            <div class="w-[700px] h-[700px] bg-pareto-mainBlue/20 blur-[180px] absolute bottom-0 -left-40"></div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <p class="text-pareto-magenta uppercase tracking-[0.45em] text-xs font-bold mb-4">Transparent from day
+                    one</p>
+                <h2 class="text-4xl md:text-5xl font-serif font-light leading-tight mb-6">Pricing tailored to how you
+                    trade</h2>
+                <p class="text-pareto-darkGrey text-lg max-w-3xl mx-auto mb-8">Choose the commission class that fits
+                    your trading rhythm. Every tier includes access to regulated markets, investor protection, and our
+                    award-winning trading stack.</p>
+                <div
+                    class="inline-flex items-center gap-4 bg-white/5 border border-white/10 rounded-full px-6 py-3 text-sm text-gray-300">
+                    <span class="font-semibold text-white">Register in under 3 minutes</span>
+                    <span class="w-1 h-1 rounded-full bg-white/30"></span>
+                    <span>BankID onboarding · Instant funding</span>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex justify-center mb-12 reveal">
+                <div class="bg-white/5 p-1 rounded-full inline-flex border border-white/10 backdrop-blur-md">
+                    <button id="tab-invest"
+                        class="px-8 py-3 rounded-full text-sm font-bold transition-all bg-pareto-magenta text-white shadow-lg whitespace-nowrap">
+                        Long-term investing
+                    </button>
+                    <button id="tab-trade"
+                        class="px-8 py-3 rounded-full text-sm font-bold transition-all text-gray-400 hover:text-white whitespace-nowrap">
+                        Active trading
+                    </button>
+                </div>
+            </div>
+
+            <!-- Invest Tab Content -->
+            <div id="pricing-invest" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal delay-100">
+                <p class="col-span-full text-center text-gray-400 text-sm mb-4">Solutions for long-term savings, funds,
+                    and building your portfolio over time.</p>
+                <!-- Pareto START -->
+                <div
+                    class="bg-[#0c1a34] border border-white/10 rounded-3xl p-8 flex flex-col gap-6 shadow-[0_25px_70px_rgba(0,0,0,0.5)] hover:border-pareto-magenta/40 transition-all">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.35em] text-gray-400 mb-2">Starting Out</p>
+                        <h3 class="text-2xl font-serif font-semibold">Start</h3>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">0.030%</div>
+                        <div class="text-gray-400 text-sm">Min. commission 19 NOK</div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>Intro offer for the first 3 months</li>
+                        <li>Includes Infront Web Trader</li>
+                        <li>Full market depth on Nordic equities</li>
+                    </ul>
+                    <button
+                        class="mt-auto bg-pareto-magenta text-white py-3 rounded-2xl font-semibold hover:bg-pareto-magentaHover">Choose
+                        Start</button>
+                </div>
+
+                <!-- Pareto BASIC -->
+                <div
+                    class="bg-[#0c1a34] border border-white/10 rounded-3xl p-8 flex flex-col gap-6 shadow-[0_25px_70px_rgba(0,0,0,0.5)] hover:border-pareto-magenta/40 transition-all">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.35em] text-gray-400 mb-2">Long-term</p>
+                        <h3 class="text-2xl font-serif font-semibold">Basic</h3>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">0.089%</div>
+                        <div class="text-gray-400 text-sm">Min. commission 89 NOK</div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>Ideal for monthly investing habits</li>
+                        <li>Access to funds, ETFs and equities</li>
+                        <li>Includes research digest & webinars</li>
+                    </ul>
+                    <button
+                        class="mt-auto bg-white text-pareto-darkBlue py-3 rounded-2xl font-semibold hover:bg-gray-100">Choose
+                        Basic</button>
+                </div>
+
+                <!-- Pareto PRIVATE BANKING -->
+                <div
+                    class="bg-[#0c1a34] border border-white/10 rounded-3xl p-8 flex flex-col gap-6 shadow-[0_25px_70px_rgba(0,0,0,0.5)] hover:border-pareto-magenta/40 transition-all">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.35em] text-gray-400 mb-2">Private Wealth</p>
+                        <h3 class="text-2xl font-serif font-semibold">Private Banking</h3>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">0.039%</div>
+                        <div class="text-gray-400 text-sm">Min. commission 59 NOK</div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>Dedicated advisor & bespoke mandates</li>
+                        <li>Access to IPOs and ECM allocations</li>
+                        <li>Consolidated reporting & custody</li>
+                    </ul>
+                    <button
+                        class="mt-auto bg-white text-pareto-darkBlue py-3 rounded-2xl font-semibold hover:bg-gray-100">Book
+                        a Call</button>
+                </div>
+
+                <!-- Pareto YOUNG (Full Width) -->
+                <div
+                    class="bg-[#0c1a34] border border-white/10 rounded-3xl p-8 flex flex-col gap-6 shadow-[0_25px_70px_rgba(0,0,0,0.5)] hover:border-pareto-magenta/40 transition-all md:col-span-2 lg:col-span-3">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.35em] text-gray-400 mb-2">Future Investors</p>
+                            <h3 class="text-2xl font-serif font-semibold">Young</h3>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold">0.030%</div>
+                            <div class="text-gray-400 text-sm">Min. commission 19 NOK</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed">Preferential pricing for clients under 28 or
+                        students with active savings plans. Includes education sessions, model portfolios, and
+                        fractional Nordic investing.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="flex-1 bg-pareto-magenta text-white py-3 rounded-2xl font-semibold hover:bg-pareto-magentaHover">Apply
+                            for Young</button>
+                        <button
+                            class="flex-1 border border-white/30 text-white py-3 rounded-2xl font-semibold hover:bg-white/10">Invite
+                            a Friend</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trade Tab Content (Hidden by default) -->
+            <div id="pricing-trade"
+                class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal delay-100">
+                <p class="col-span-full text-center text-gray-400 text-sm mb-4">Advanced tools, lower rates, and direct
+                    market access for active traders.</p>
+                <!-- Pareto ACTIVE -->
+                <div
+                    class="bg-[#111f3d] border-2 border-pareto-gold rounded-3xl p-8 flex flex-col gap-6 shadow-[0_35px_90px_rgba(255,194,0,0.15)] relative overflow-hidden">
+                    <span
+                        class="absolute top-6 right-6 bg-pareto-gold text-pareto-darkBlue text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Popular</span>
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.35em] text-gray-400 mb-2">Weekly Trader</p>
+                        <h3 class="text-2xl font-serif font-semibold">Active</h3>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">0.045%</div>
+                        <div class="text-gray-400 text-sm">Min. commission 69 NOK</div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>Priority access to trading desk</li>
+                        <li>Advanced order types & SOR routing</li>
+                        <li>Negotiable rates above 50 trades / mo</li>
+                    </ul>
+                    <button
+                        class="mt-auto bg-pareto-gold text-pareto-darkBlue py-3 rounded-2xl font-semibold hover:bg-yellow-400">Choose
+                        Active</button>
+                </div>
+
+                <!-- Pareto PREMIUM -->
+                <div
+                    class="bg-[#0c1a34] border border-white/10 rounded-3xl p-8 flex flex-col gap-6 shadow-[0_25px_70px_rgba(0,0,0,0.5)] hover:border-pareto-magenta/40 transition-all">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.35em] text-gray-400 mb-2">Daily Execution</p>
+                        <h3 class="text-2xl font-serif font-semibold">Premium</h3>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">0.035%</div>
+                        <div class="text-gray-400 text-sm">Min. commission 39 NOK</div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>Designed for full-time traders</li>
+                        <li>Direct broker line & market color</li>
+                        <li>White-glove onboarding & limits</li>
+                    </ul>
+                    <button
+                        class="mt-auto border border-white/30 text-white py-3 rounded-2xl font-semibold hover:bg-white/10">Choose
+                        Premium</button>
+                </div>
+
+                <!-- Pareto TRADER -->
+                <div
+                    class="bg-[#0c1a34] border border-white/10 rounded-3xl p-8 flex flex-col gap-6 shadow-[0_25px_70px_rgba(0,0,0,0.5)] hover:border-pareto-magenta/40 transition-all">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.35em] text-gray-400 mb-2">High Velocity</p>
+                        <h3 class="text-2xl font-serif font-semibold">Trader</h3>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">0.030%</div>
+                        <div class="text-gray-400 text-sm">Min. commission 39 NOK</div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>For 100+ trades per month</li>
+                        <li>Custom algo setup & FIX access</li>
+                        <li>Dynamic margin & leverage options</li>
+                    </ul>
+                    <button
+                        class="mt-auto bg-pareto-magenta text-white py-3 rounded-2xl font-semibold hover:bg-pareto-magentaHover">Talk
+                        to Desk</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-32 relative overflow-hidden bg-gradient-to-b from-[#f5f7fa] to-[#1a2235]">
+        <div
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1000px] h-[500px] bg-pareto-magenta/20 blur-[120px] pointer-events-none">
+        </div>
+
+        <div class="max-w-3xl mx-auto px-6 text-center relative z-10 reveal">
+            <h2 class="text-4xl md:text-6xl font-serif font-light mb-8 text-white leading-tight">Ready to upgrade?</h2>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                    class="bg-white text-pareto-darkBlue hover:bg-pareto-lightGrey px-10 py-5 rounded-lg font-bold text-xl transition-all shadow-2xl transform hover:scale-105">
+                    Become a Client
+                </button>
+                <button
+                    class="border border-white/20 hover:bg-white/10 text-white px-10 py-5 rounded-lg font-medium text-xl transition-all">
+                    Contact Us
+                </button>
+            </div>
+            <div class="mt-8 flex justify-center gap-8 text-sm text-gray-500">
+                <span class="flex items-center gap-2"><i data-lucide="lock" class="w-4 h-4"></i> Regulated by
+                    Finanstilsynet</span>
+                <span class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4"></i> Segregated
+                    Accounts</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#050a14] pt-20 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
+                <!-- Footer links (same as before) -->
+                <div>
+                    <h4 class="font-serif font-bold text-white mb-6">Platform</h4>
+                    <ul class="space-y-3 text-sm text-pareto-darkGrey">
+                        <li><a href="#" class="hover:text-white transition-colors">Web Trader</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Mobile App</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Algorithms</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Infront</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-serif font-bold text-white mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm text-pareto-darkGrey">
+                        <li><a href="#" class="hover:text-white transition-colors">Stock Trading</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Funds</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Analysis</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Investment Banking</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-serif font-bold text-white mb-6">Support</h4>
+                    <ul class="space-y-3 text-sm text-pareto-darkGrey">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Trading Desk</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" class="block mb-6 opacity-70 hover:opacity-100 transition-opacity">
+                        <!-- Replaced SVG with IMG (With hover effect preserved) -->
+                        <img src="https://paretosec.no/images/18.18c6b8dc18b37d54b3d1302/1697474659350/pareto-Logo.svg"
+                            alt="Pareto Securities" class="h-6 w-auto">
+                    </a>
+                    <p class="text-xs text-pareto-darkGrey leading-relaxed">
+                        Pareto Securities AS is an investment firm with a licence from the Financial Supervisory
+                        Authority of Norway.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-8 text-xs text-pareto-darkGrey">
+                <div>&copy; 2025 Pareto Securities. All rights reserved.</div>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

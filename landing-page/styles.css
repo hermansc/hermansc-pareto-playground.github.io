@@ -1,0 +1,55 @@
+body {
+    background-color: #0F1A2D;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5 { font-family: 'Merriweather', serif; }
+
+/* Glassmorphism */
+.glass-panel {
+    background: rgba(15, 26, 45, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(175, 205, 215, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel:hover {
+    transform: translateY(-5px);
+    border-color: rgba(175, 205, 215, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.grid-bg {
+    background-image: 
+        linear-gradient(to right, rgba(175, 205, 215, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(175, 205, 215, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(circle at center, black, transparent 80%);
+}
+
+.text-gradient-gold {
+    background: linear-gradient(to right, #FFC200, #FFE082);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* SOR Component Styles */
+.sor-line {
+    background: linear-gradient(to bottom, transparent, #3b82f6, transparent);
+}
+
+/* Reveal on scroll class */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
